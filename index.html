@@ -7,32 +7,32 @@
         <script src = "scripts.js"></script>
     </head>
     <body>
-        <div style="text-align: center;">
+        <div style="text-align: center; width: 100%; border: 3px solid orange">
             <h1>Flight Simulator</h1>
             <h2>Current Flight Status</h2>
             <p id = "flightStatus">Space shuttle ready for takeoff</p>  <!--Flight Status-->
             <h2>Shuttle Trajectory</h2>
         </div>
-        <div style="text-align: center; height: 400px; width: 100%;" >
-            <div style="text-align: center; display: inline-block;">
+        <div style="text-align: center; height: 400px; position: relative; width: 100%; border: 3px solid orange">
+            <div style="text-align: center; display: inline-block; border: 3px solid royalblue">
                 <h3>Fuel Levels</h3>
                 <p>Tank Full</p>
                 <h3>Astronaut Chat</h3>
                 <p>Houston, we are ready when you are!</p>
             </div>
-            <div id = "shuttleBackground" style = "position: relative;">
-                <img src = "LaunchCode_rocketline_white.png" height = "75" width = "75" id = "rocket"/>
+            <div id = "shuttleBackground" style = "position: relative; bottom: 0px; border: 3px solid blueviolet">
+                <img src = "LaunchCode_rocketline_white.png" height = "75" width = "75" id = "rocket" style = "position: relative; top: 240px; left: 0px">
             </div>
-            <div style = "text-align: center; display: inline-block;">
-                    <button>Up</button>
-                    <button>Down</button>
-                    <button>Right</button>
-                    <button>Left</button>
+            <div style = "text-align: center; display: inline-block; border: 3px solid royalblue">
+                    <button id="upb">Up</button>
+                    <button id="downb">Down</button>
+                    <button id="rightb">Right</button>
+                    <button id="leftb">Left</button>
                     <h3>Space Shuttle Height</h3>
                     <p id="spaceShuttleHeight">0</p><p style = "display: inline-block;"> miles</p>
             </div>
         </div>
-        <div style="text-align: center;">
+        <div style="text-align: center; border: 3px solid royalblue">
             <button id = "takeoff">Take off</button>
             <button id = "landing">Land</button>
             <button id = "missionAbort">Abort Mission</button>
